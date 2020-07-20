@@ -1,0 +1,15 @@
+.banner .carousel-caption {
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.banner .carousel-caption p {
+    margin: 25px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+    .banner .carousel-capiton h1 {
+        font-size: 2rem;
+    }
+}

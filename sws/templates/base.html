@@ -14,9 +14,7 @@
 
     {% include 'partials/_navbar.html' %}
 
-    <section id="content" class="jumbotron">
-        {% block content %}{% endblock %}
-    </section>
+    {% block content %}{% endblock %}
 
     <!-- Bootstrap -->
     <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
