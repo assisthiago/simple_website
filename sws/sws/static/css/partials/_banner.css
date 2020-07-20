@@ -1,3 +1,7 @@
+.banner {
+    padding-top: 56px;
+}
+
 .banner .carousel-caption {
     bottom: auto;
     top: 50%;
