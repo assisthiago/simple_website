@@ -1,0 +1,22 @@
+.footer {
+    margin: 50px 0;
+}
+
+.footer-top {
+    padding-bottom: 50px;
+}
+
+.form-top .form {
+    display: none;
+    width: 320px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 50px;
+}
+
+.footer-bottom p {
+    color: rgba(0, 0, 0, 0.2)!important;
+    font-size: .8125rem;
+}
