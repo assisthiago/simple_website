@@ -6,9 +6,8 @@
     padding-bottom: 50px;
 }
 
-.form-top .form {
-    display: none;
-    width: 320px;
+.footer-top .form {
+    margin: 0;
 }
 
 .footer-bottom {

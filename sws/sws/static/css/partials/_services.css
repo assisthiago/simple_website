@@ -1,0 +1,16 @@
+.service {
+    margin: 50px 0;
+}
+
+.service-item {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.service-icon {
+    height: 3rem!important;
+    margin-right: 1.5rem;
+    stroke-width: 2 !important;
+    width: 3rem!important;
+}

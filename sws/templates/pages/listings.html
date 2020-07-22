@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <section id="listings" class="listings">
+        <link rel="stylesheet" href="{% static 'css/listings.css' %}">
+
+        <div class="container">
+            {% include 'partials/_breadcrumb.html' %}
+
+            <div class="text-center">
+                <h1 class="text-uppercase">Listings and Categories</h1>
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+
+            <div class="container-fluid wrapper">
+                <div class="row">
+                    <div class="col col-12 col-sm-12 col-md-3 col-lg-3">
+                        {% include 'partials/_filters.html' %}
+                    </div>
+                    <div class="col col-12 col-sm-12 col-md-9 col-lg-9 list">
+                        Listagem
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        {% include 'partials/_services.html' %}
+
+    </section>
+{% endblock %}

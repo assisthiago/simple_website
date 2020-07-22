@@ -1,0 +1,18 @@
+.listings {
+    margin-top: 56px;
+    padding-top: 50px;
+}
+
+.listings .service {
+    background-color: #f8f9fa;
+    margin: 50px 0 0 0;
+    padding: 50px 0;
+}
+
+.listings .text-muted {
+    margin: 0;
+}
+
+.listings .wrapper {
+    margin: 100px 0 50px 0;
+}
