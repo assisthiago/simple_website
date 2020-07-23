@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <section id="details" class="details">
+        <link rel="stylesheet" href="{% static 'css/details.css' %}">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6">
+                    {% include 'partials/_carousel.html' %}
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6">
+                    {% include 'partials/_breadcrumb.html' %}
+                </div>
+            </div>
+
+        </div>
+
+        {% include 'partials/_services.html' %}
+
+    </section>
+{% endblock %}

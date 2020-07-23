@@ -18,8 +18,83 @@
                     <div class="col col-12 col-sm-12 col-md-3 col-lg-3">
                         {% include 'partials/_filters.html' %}
                     </div>
-                    <div class="col col-12 col-sm-12 col-md-9 col-lg-9 list">
-                        Listagem
+
+                    <div class="col col-12 col-sm-12 col-md-9 col-lg-9 products">
+                        <div class="products-header mb-3">
+                            <div>
+                                <span><strong>1-99</strong> of <strong>999</strong> products</span>
+                            </div>
+
+                            <div class="products-flex">
+                                <span class="mr-2">Show</span>
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled" href="#">20</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">50</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">100</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="products-flex">
+                                <span class="mr-2">Sort by</span>
+                                <select class="custom-select">
+                                    <option selected>Default</option>
+                                    <option value="1">Most wanted</option>
+                                    <option value="2">Last arrivlas</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="container products-list">
+                            <div class="row">
+                                <div class="col col-12 col-sm-12 col-md-4 col-lg-4 p-1 mb-3">
+                                    {% include 'partials/_card.html' %}
+                                </div>
+                                <div class="col col-12 col-sm-12 col-md-4 col-lg-4 p-1 mb-3">
+                                    {% include 'partials/_card.html' %}
+                                </div>
+                                <div class="col col-12 col-sm-12 col-md-4 col-lg-4 p-1 mb-3">
+                                    {% include 'partials/_card.html' %}
+                                </div>
+                                <div class="col col-12 col-sm-12 col-md-4 col-lg-4 p-1 mb-3">
+                                    {% include 'partials/_card.html' %}
+                                </div>
+                                <div class="col col-12 col-sm-12 col-md-4 col-lg-4 p-1 mb-3">
+                                    {% include 'partials/_card.html' %}
+                                </div>
+                                <div class="col col-12 col-sm-12 col-md-4 col-lg-4 p-1 mb-3">
+                                    {% include 'partials/_card.html' %}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="products-nav">
+                            <ul class="nav justify-content-center">
+                                <li class="nav-item">
+                                    <a class="nav-link mr-3 text-uppercase" href="#">Prev</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled" href="#">1</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">2</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">3</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">4</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ml-3 text-uppercase" href="#">Next</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

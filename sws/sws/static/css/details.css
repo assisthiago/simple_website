@@ -1,0 +1,10 @@
+.details {
+    margin-top: 56px;
+    padding-top: 20px;
+}
+
+.details .service {
+    background-color: #f8f9fa;
+    margin: 50px 0 0 0;
+    padding: 50px 0;
+}
