@@ -10,12 +10,70 @@
                 <div class="col col-12 col-sm-12 col-md-6 col-lg-6">
                     {% include 'partials/_carousel.html' %}
                 </div>
-                <div class="col col-12 col-sm-12 col-md-6 col-lg-6">
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 pl-5">
                     {% include 'partials/_breadcrumb.html' %}
+
+                    <div class="product-detail">
+                        <h1 class="display-4">Name of the product</h1>
+                        <p class="mb-4 mt-4 h4 price">R$9999.99</p>
+                        <p class="mb-4 text-muted description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+                        <form>
+                            <div class="form-group">
+                                <label class="text-uppercase" for="category1">Category</label>
+                                <input type="text" class="form-control" id="category1" value="Value" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label class="text-uppercase" for="category2">Category</label>
+                                <input type="text" class="form-control" id="category2" value="Value" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label class="text-uppercase" for="items">Items</label>
+                                <input type="number" class="form-control" id="items" value="1">
+                            </div>
+                            <button type="submit" class="btn btn-lg btn-dark text-uppercase mt-5">
+                                <i class="fas fa-cart-plus"></i> <span class="ml-2">Add to cart</span>
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
-
         </div>
+
+        <section id="might-also" class="might-also">
+            <div class="container">
+                <div class="title text-center">
+                    <h6 class="text-uppercase mb-4">You might also like</h6>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-12 col-sm-12 col-md-2 col-lg-2 p-1">
+                            {% include 'partials/_card.html' %}
+                        </div>
+                        <div class="col col-12 col-sm-12 col-md-2 col-lg-2 p-1">
+                            {% include 'partials/_card.html' %}
+                        </div>
+                        <div class="col col-12 col-sm-12 col-md-2 col-lg-2 p-1">
+                            {% include 'partials/_card.html' %}
+                        </div>
+                        <div class="col col-12 col-sm-12 col-md-2 col-lg-2 p-1">
+                            {% include 'partials/_card.html' %}
+                        </div>
+                        <div class="col col-12 col-sm-12 col-md-2 col-lg-2 p-1">
+                            {% include 'partials/_card.html' %}
+                        </div>
+                        <div class="col col-12 col-sm-12 col-md-2 col-lg-2 p-1">
+                            {% include 'partials/_card.html' %}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <a class="btn btn-link text-uppercase" href="/listings">More</a>
+                </div>
+            </div>
+        </section>
 
         {% include 'partials/_services.html' %}
 

@@ -3,8 +3,53 @@
     padding-top: 20px;
 }
 
+.details .breadcrumb {
+    justify-content: left;
+    padding-left: 0;
+}
+
+.details h1 {
+    font-weight: bold;
+}
+
+.details .price {
+    font-weight: lighter;
+}
+
+.details .description {
+    font-size: .9rem;
+}
+
+.details input:read-only {
+    background-color: transparent;
+}
+
+.details label {
+    letter-spacing: 0.1rem;
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+.details .might-also {
+    background-color: antiquewhite;
+    margin-top: 50px;
+    padding: 50px 0;
+}
+
+.details .might-also h6 {
+    font-weight: bold;
+}
+
+.details .might-also .card .h6 {
+    font-size: .8rem;
+}
+
 .details .service {
     background-color: #f8f9fa;
-    margin: 50px 0 0 0;
+    margin: 0;
     padding: 50px 0;
+}
+
+.details .product-detail input {
+    width: auto;
 }
