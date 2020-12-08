@@ -1,7 +1,12 @@
 from django.shortcuts import render
 
+from products.models import Product
+
+
 def index(request):
-    return render(request, 'pages/index.html')
+    last_arrivals = Product.last_arrivals()
+    context = {'last_arrivals' : last_arrivals}
+    return render(request, 'pages/index.html', context=context)
 
 def listings(request):
     return render(request, 'pages/listings.html')

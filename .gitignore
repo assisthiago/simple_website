@@ -131,3 +131,7 @@ dmypy.json
 
 # Media folder
 media/
+static/
+
+# VSCode settings
+.vscode

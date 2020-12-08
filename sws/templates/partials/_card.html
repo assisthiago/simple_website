@@ -3,12 +3,12 @@
 <link rel="stylesheet" href="{% static 'css/partials/_card.css' %}">
 
 <div class="card">
-    <a href="/details">
-        <img class="card-img-top" src="https://i.picsum.photos/id/525/255/380.jpg?hmac=F7dT6_tvzZwlSfLN7ZNtKbEIk0j-MGapKSII1mkGHwE" alt="Card image cap">
+    <a href="/details/{{ product.id }}">
+        <img class="card-img-top" src="{{ product.image_1 }}" alt="Card image cap">
         <div class="card-body py-2">
-            <p class="text-muted text-sm mb-1">Ipsum</p>
-            <h3 class="h6 text-uppercase mb-1">Phasellus viverra mi</h3>
-            <p class="text-muted text-sm mb-1">R$9999.99</p>
+            <p class="text-muted text-sm mb-1">{{ product.category }}</p>
+            <h3 class="h6 text-uppercase mb-1">{{ product.name }}</h3>
+            <p class="text-muted text-sm mb-1">{{ product.price }}</p>
         </div>
     </a>
 </div>

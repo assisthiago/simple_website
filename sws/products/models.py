@@ -30,17 +30,26 @@ CATEGORY_CHOICES = [
 
 class Product(models.Model):
     id = models.AutoField(primary_key=True)
-    name = models.CharField(max_length=255)
-    description = models.TextField(max_length=255, blank=True)
-    price = models.DecimalField(max_digits=6, decimal_places=2, blank=True)
-    category = models.CharField(max_length=100, choices=CATEGORY_CHOICES)
-    image_1 =  models.ImageField(upload_to='photos/')
-    image_2 =  models.ImageField(upload_to='photos/', blank=True)
-    image_3 =  models.ImageField(upload_to='photos/', blank=True)
-    image_4 =  models.ImageField(upload_to='photos/', blank=True)
-    image_5 =  models.ImageField(upload_to='photos/', blank=True)
-    image_6 =  models.ImageField(upload_to='photos/', blank=True)
-    created_at = models.DateTimeField(default=datetime.now())
+    name = models.CharField(max_length=255, verbose_name='Nome')
+    description = models.TextField(max_length=255, blank=True, verbose_name='Descrição')
+    price = models.DecimalField(max_digits=6, decimal_places=2, blank=True, verbose_name='Preço')
+    category = models.CharField(max_length=100, choices=CATEGORY_CHOICES, verbose_name='Categoria')
+    image_1 =  models.ImageField(upload_to='photos/', verbose_name='Imagem principal')
+    image_2 =  models.ImageField(upload_to='photos/', blank=True, verbose_name='Segunda imagem')
+    image_3 =  models.ImageField(upload_to='photos/', blank=True, verbose_name= 'Terceira imagem')
+    image_4 =  models.ImageField(upload_to='photos/', blank=True, verbose_name= 'Quarta imagem')
+    image_5 =  models.ImageField(upload_to='photos/', blank=True, verbose_name= 'Quinta imagem')
+    image_6 =  models.ImageField(upload_to='photos/', blank=True, verbose_name= 'Sexta imagem')
+    created_at = models.DateTimeField(auto_now_add=True, verbose_name='Data de criação')
+    updated_at = models.DateTimeField(auto_now=True, verbose_name='Data de atualização')
+
+    @staticmethod
+    def last_arrivals():
+        return Product.objects.order_by('-created_at')[:4]
+
+    class Meta:
+        verbose_name = 'produto'
+        verbose_name_plural = 'Lista de produtos'
 
     def __str__(self):
         return self.name
