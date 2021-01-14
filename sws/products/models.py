@@ -40,12 +40,17 @@ class Product(models.Model):
     image_4 =  models.ImageField(upload_to='photos/', blank=True, verbose_name= 'Quarta imagem')
     image_5 =  models.ImageField(upload_to='photos/', blank=True, verbose_name= 'Quinta imagem')
     image_6 =  models.ImageField(upload_to='photos/', blank=True, verbose_name= 'Sexta imagem')
+    wanted = models.BooleanField(default=False, verbose_name='Mais procurados')
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='Data de criação')
     updated_at = models.DateTimeField(auto_now=True, verbose_name='Data de atualização')
 
     @staticmethod
     def last_arrivals():
         return Product.objects.order_by('-created_at')[:4]
+
+    @staticmethod
+    def most_wanted():
+        return Product.objects.filter(wanted=True).order_by('-created_at')
 
     class Meta:
         verbose_name = 'produto'

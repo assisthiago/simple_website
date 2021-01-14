@@ -5,7 +5,11 @@ from products.models import Product
 
 def index(request):
     last_arrivals = Product.last_arrivals()
-    context = {'last_arrivals' : last_arrivals}
+    most_wanted = Product.most_wanted()
+    context = {
+        'last_arrivals' : last_arrivals,
+        'most_wanted' : most_wanted
+    }
     return render(request, 'pages/index.html', context=context)
 
 def listings(request):
